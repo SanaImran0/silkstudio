@@ -17,7 +17,9 @@ import os
 from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
-load_dotenv()
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+load_dotenv(PROJECT_ROOT / ".env")
 import requests
 
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
@@ -28,8 +30,8 @@ API_URL = "https://openrouter.ai/api/v1/chat/completions"
 #   "google/gemini-3.1-flash-image-preview"  -> Nano Banana 2 (extended aspect ratios, up to 4K)
 #   "google/gemini-3-pro-image-preview"      -> Nano Banana Pro (best quality, up to 14 reference images)
 MODEL = "google/gemini-3.1-flash-image-preview"
-OUTPUT_DIR_PATH = f"outputs/{MODEL}"
-os.makedirs(OUTPUT_DIR_PATH, exist_ok=True)
+OUTPUT_DIR_PATH = PROJECT_ROOT / "outputs" / MODEL
+OUTPUT_DIR_PATH.mkdir(parents=True, exist_ok=True)
 
 VALID_ASPECT_RATIOS = {
     "1:1", "2:3", "3:2", "3:4", "4:3", "4:5", "5:4",

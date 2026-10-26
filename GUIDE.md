@@ -1,28 +1,30 @@
 # Dress photograph workflow
 
-`serve_dress.py` opens a one-page uploader in the browser. It works the same on macOS, Windows, and Linux: you choose photos with the system file window, and the page calls the generation code in `generate_dress.py`. The instructions the model receives are written in `prompt.py`. The finished portrait is shown on the page and saved in `outputs/`.
+The Python API lives in `backend/`. The page is a Next.js app in `frontend/`, styled with Tailwind. You choose photos in the browser, and the page calls `backend/generate_dress.py`. The instructions the model receives are written in `backend/prompt.py`. The finished portrait is shown on the page and saved in `outputs/`.
 
 ## Before you run
 
 From the project folder, with the virtual environment active:
 
 ```bash
-pip install -r requirements.txt
+pip install -r backend/requirements.txt
+npm install --prefix frontend
 ```
 
-`.env` must contain:
+`.env` in the project root must contain:
 
 ```bash
 OPENROUTER_API_KEY=sk-or-v1-...
 ```
 
-Then:
+Start the API and the page in two terminals:
 
 ```bash
-python serve_dress.py
+python backend/serve.py
+npm run dev --prefix frontend
 ```
 
-The terminal prints a local address, usually `http://127.0.0.1:8765`, and opens it in the browser. Stop the page with Ctrl+C. The same command is used on macOS, Windows, and Linux.
+Open `http://127.0.0.1:3000`. The API listens on `http://127.0.0.1:8765`. Stop either process with Ctrl+C. The same commands are used on macOS, Windows, and Linux.
 
 ## The page
 
@@ -49,7 +51,7 @@ Each piece is a row. Choose a photo, or add several close-ups where the row says
 To prepare photos without generating:
 
 ```bash
-python compress_references.py photo1.jpg photo2.jpg -o compressed_references
+python backend/compress_references.py photo1.jpg photo2.jpg -o compressed_references
 ```
 
 ## The 14-image limit

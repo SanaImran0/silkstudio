@@ -1,24 +1,23 @@
 """
-Open a one-page uploader in the browser and generate a dress portrait from it.
+API for the Next.js app. Photos are uploaded here, then create_dress() runs.
 
-Works the same on macOS, Windows, and Linux. Photos are chosen with the system
-file dialog, then this server calls create_dress() in generate_dress.py.
-
-Run from the project folder:
-    python serve_dress.py
+Run from the repository root:
+    python backend/serve.py
 """
 
 import json
 import mimetypes
 import os
 import shutil
+import sys
 import threading
-import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
-ROOT = Path(__file__).resolve().parent
+BACKEND = Path(__file__).resolve().parent
+ROOT = BACKEND.parent
+sys.path.insert(0, str(BACKEND))
 os.chdir(ROOT)
 
 from generate_dress import (  # noqa: E402
@@ -31,7 +30,6 @@ from prompt import GARMENT_SLOTS  # noqa: E402
 
 UPLOADS = ROOT / "uploads"
 OUTPUTS = ROOT / "outputs"
-PAGE = ROOT / "index.html"
 MAX_FILE_BYTES = 50 * 1024 * 1024
 SLOT_KEYS = {slot.key: slot for slot in GARMENT_SLOTS}
 
@@ -59,10 +57,18 @@ class DressHandler(BaseHTTPRequestHandler):
     def log_message(self, format: str, *args) -> None:
         print(f"{self.address_string()} {format % args}")
 
+    def do_OPTIONS(self) -> None:
+        self.send_response(204)
+        self._cors()
+        self.end_headers()
+
     def do_GET(self) -> None:
         path = urlparse(self.path).path
-        if path in {"/", "/index.html"}:
-            self._send_bytes(200, PAGE.read_bytes(), "text/html; charset=utf-8")
+        if path == "/":
+            self._send_json(200, {
+                "service": "silk-studio",
+                "ui": "http://127.0.0.1:3000",
+            })
             return
         if path == "/api/slots":
             payload = [
@@ -215,11 +221,17 @@ class DressHandler(BaseHTTPRequestHandler):
     def _send_json(self, status: int, payload: object) -> None:
         self._send_bytes(status, json.dumps(payload).encode("utf-8"), "application/json")
 
+    def _cors(self) -> None:
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type, X-Session, X-Slot, X-Filename")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+
     def _send_bytes(self, status: int, body: bytes, content_type: str) -> None:
         self.send_response(status)
         self.send_header("Content-Type", content_type)
         self.send_header("Content-Length", str(len(body)))
         self.send_header("Cache-Control", "no-store")
+        self._cors()
         self.end_headers()
         self.wfile.write(body)
 
@@ -236,9 +248,9 @@ def main() -> None:
         raise SystemExit("No free port between 8765 and 8774.")
 
     url = f"http://127.0.0.1:{server.server_address[1]}"
-    print(f"Silk Studio is at {url}", flush=True)
+    print(f"API at {url}", flush=True)
+    print("UI at http://127.0.0.1:3000  (npm run dev --prefix frontend)", flush=True)
     print("Press Ctrl+C to stop.", flush=True)
-    threading.Thread(target=webbrowser.open, args=(url,), daemon=True).start()
     try:
         server.serve_forever()
     except KeyboardInterrupt:

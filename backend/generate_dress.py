@@ -8,11 +8,12 @@ Setup:
     pip install requests python-dotenv pillow
     Put OPENROUTER_API_KEY in .env
 
-Run the page (macOS, Windows, and Linux):
-    python serve_dress.py
+Run from the repository root:
+    python backend/serve.py
+    npm run dev --prefix frontend
 
 The terminal interview is still available:
-    python generate_dress.py
+    python backend/generate_dress.py
 """
 
 import base64
@@ -29,7 +30,8 @@ from dotenv import load_dotenv
 from compress_references import compress_images, report
 from prompt import GARMENT_SLOTS, GarmentSlot, build_prompt, image_caption
 
-load_dotenv()
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+load_dotenv(PROJECT_ROOT / ".env")
 
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
@@ -201,7 +203,7 @@ def output_paths() -> tuple[Path, Path]:
     model_name = MODEL.split("/")[-1]
     aspect = ASPECT_RATIO.replace(":", "x")
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    directory = Path("outputs") / model_name / aspect / IMAGE_SIZE
+    directory = PROJECT_ROOT / "outputs" / model_name / aspect / IMAGE_SIZE
     directory.mkdir(parents=True, exist_ok=True)
     return directory / f"{stamp}.png", directory / f"{stamp}.txt"
 
@@ -306,7 +308,7 @@ def create_dress(images: list[CollectedImage]) -> tuple[Path, Path, str]:
     print("\nFitting references under Google's 20MB request limit.")
     prepared = compress_images(
         [image.path for image in images],
-        Path("uploads") / image_path.stem,
+        PROJECT_ROOT / "uploads" / image_path.stem,
     )
     summary = report(prepared)
     print(summary)
