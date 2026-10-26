@@ -1,6 +1,13 @@
 .env
 venv/
-uploads/
+
 
 .DS_Store
 __pycache__/
+
+outputs/
+inputs/
+uploads/
+outputs/*
+inputs/*
+uploads/*
