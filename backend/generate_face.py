@@ -25,6 +25,7 @@ import hashlib
 import json
 import mimetypes
 import os
+import random
 import shutil
 import threading
 import webbrowser
@@ -35,8 +36,7 @@ from urllib.parse import unquote, urlparse
 
 import requests
 from dotenv import load_dotenv
-
-from compress_references import compress_images, report
+from PIL import Image, ImageOps
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(PROJECT_ROOT / ".env")
@@ -44,8 +44,8 @@ load_dotenv(PROJECT_ROOT / ".env")
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL = "google/gemini-3.1-flash-image-preview"
-ASPECT_RATIO = "3:4"
-IMAGE_SIZE = "2K"
+ASPECT_RATIO = "5:4"
+IMAGE_SIZE = "4K"
 ADULT_AGE_RANGES = ("18-24", "25-34")
 IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
 MIN_REFERENCES = 2
@@ -57,15 +57,62 @@ _sessions_lock = threading.Lock()
 _generate_lock = threading.Lock()
 
 
-def face_prompt(age_range: str, hair: str) -> str:
+FACE_SHAPES = (
+    "a softly square face",
+    "a longer, narrower face",
+    "a heart-shaped face with a smaller chin",
+    "a rounder face with fuller cheeks",
+)
+EYES = (
+    "almond eyes set wider apart",
+    "rounder eyes set closer together",
+    "slightly hooded eyes",
+    "softer, wider eyes",
+)
+NOSES = (
+    "a shorter nose with a rounded tip",
+    "a longer, straighter nose",
+    "a broader nose with a soft tip",
+    "a narrower nose",
+)
+LIPS = (
+    "a fuller lower lip",
+    "a smaller mouth",
+    "medium lips with a defined cupid's bow",
+    "a wider mouth",
+)
+JAWS = (
+    "a soft jaw and a rounded chin",
+    "a narrow chin",
+    "a wider jaw",
+    "a slim jaw and a light chin",
+)
+
+
+def new_features() -> str:
+    return (
+        f"{random.choice(FACE_SHAPES)}, {random.choice(EYES)}, "
+        f"{random.choice(NOSES)}, {random.choice(LIPS)}, and {random.choice(JAWS)}"
+    )
+
+
+def face_prompt(age_range: str, hair: str, features: str) -> str:
     return f"""
-Create one photograph of a new adult woman for a commercial fashion model library. Exactly one person, in one frame. Not a grid, collage, or set of alternate looks.
+Create one studio photograph of a newly synthesized adult woman for a commercial fashion model library. Exactly one person, in one frame. Not a grid, collage, or set of alternate looks.
 
-The attached photos are reference material only. They show a real person. Do not depict that person. Do not make a lookalike, a relative, an aged or younger version, or a face that someone who knows her would recognize. Change the face shape, the distance between the eyes, the nose, the lips, the jaw, the chin, the brow, and the ears so the result is a different individual. Do not copy her moles, marks, or distinctive features.
+No photograph of a person is attached. The small images are flat color swatches: the first is skin tone, the second is hair color. They contain no face. Do not reconstruct anyone from them, and do not draw a real public figure. Build only the new face described below.
 
-She should look like a working fashion model during a catalog shoot, not a person sitting for a passport or identity photo. Turn her body slightly, with one shoulder closer to the camera, and let her head sit at a small natural angle. Her eyes meet the lens and are alive: a little warmth in them, as if she has just been spoken to. A small real smile, the kind that changes the eyes, not a blank closed mouth and not a wide grin. No sorrow, no heavy lids, no vacant stare, and no frown.
+Her new face is: {features}. These features replace the face in the photos. Keep her an original adult, apparent age {age_range}, with South Asian features suitable for Pakistani and Indian fashion photography.
 
-She is an original adult, apparent age {age_range}, with South Asian features suitable for Pakistani and Indian fashion photography. Hair: {hair}. Use that description for this one portrait only. A few loose strands and flyaways, not a solid sheet of hair. She wears a simple black fine-knit top with a real neckline, seams, and fabric texture. Shoulders are covered. Light daytime makeup only: groomed brows, a thin coat of mascara, a soft muted lip color, and skin that still shows pores, faint color variation, and fine facial hair underneath. No glam, no contour stripes, no glassy highlight. Eyes have depth, a moist surface, and uneven lashes. The face is slightly asymmetrical, the way a real face is. Light comes from one side, so the cheek and neck have a gentle shadow. Plain light-grey studio background. This must look like a photograph from a camera, not a rendered or retouched face. No beauty filter, no plastic skin, no waxy highlights, no extra fingers, no distorted ears. No text, logo, watermark, or other people.
+Photograph her as a fashion model on a gallery card, in a 5:4 frame. She faces the camera directly, centered, framed from the mid-chest up, with a little plain background on both sides. Her posture is a model's: shoulders relaxed and slightly back, chin gently lifted, head level, not stiff and not slouched.
+
+Her expression is a slight smile only. The corners of the mouth lift a little, the lips stay together, and no teeth show. The smile is not wide. Her eyes are bright, open, and on the lens, with a little warmth, the way a model holds a look for the camera. Not a blank face, not a dull face, not a grin, not a laugh. No frown, no sorrow, and no heavy lids.
+
+Normal adult proportions. Her head is not enlarged. Both shoulders are in frame and are wider than her head. Her neck is a natural length, not long or thin. Leave a little space around the hair. Do not crop so tightly that the face overwhelms the body.
+
+Hair: {hair}. A few loose strands at the hairline. She wears a plain white tank top with visible fine-knit texture. Light makeup, still recognizably her skin: a thin even base, a soft flush on the cheeks, groomed brows, mascara, and a light nude-rose lip. Pores remain visible. No heavy contour, no dark lipstick, no false lashes, and no glassy highlight. The face is slightly asymmetrical.
+
+Light a large soft source from slightly above and in front, a little to one side, with enough fill that the face stays bright rather than flat or grey. The nose, cheekbones, and jaw have real depth, and each eye has a small catchlight. Seamless very light grey background. A studio photograph from a camera, not a flat identity photo and not a 3D render. No beauty filter, no plastic skin, no waxy highlights, no extra fingers, no distorted ears. No text, logo, watermark, or other people.
 """.strip()
 
 
@@ -96,21 +143,54 @@ def file_sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def _mean_color(image: Image.Image, box: tuple[int, int, int, int]) -> tuple[int, int, int]:
+    pixels = [pixel for pixel in image.crop(box).getdata() if 25 < sum(pixel) / 3 < 235]
+    if len(pixels) < 20:
+        pixels = list(image.crop(box).getdata())
+    count = len(pixels)
+    return tuple(sum(pixel[channel] for pixel in pixels) // count for channel in range(3))
+
+
+def color_swatches(sources: list[Path], folder: Path) -> list[Path]:
+    """Return flat skin and hair swatches. The reference faces are not included."""
+    skin_samples = []
+    hair_samples = []
+    for path in sources:
+        image = ImageOps.exif_transpose(Image.open(path)).convert("RGB")
+        width, height = image.size
+        skin_samples.append(_mean_color(image, (
+            int(width * 0.35), int(height * 0.38), int(width * 0.65), int(height * 0.58),
+        )))
+        hair_samples.append(_mean_color(image, (
+            int(width * 0.30), int(height * 0.02), int(width * 0.70), int(height * 0.16),
+        )))
+    folder.mkdir(parents=True, exist_ok=True)
+    paths = []
+    for name, samples in (("skin_swatch.png", skin_samples), ("hair_swatch.png", hair_samples)):
+        count = len(samples)
+        color = tuple(sum(sample[channel] for sample in samples) // count for channel in range(3))
+        destination = folder / name
+        Image.new("RGB", (64, 64), color).save(destination)
+        paths.append(destination)
+    return paths
+
+
 def generate(prompt: str, images: list[Path], destination: Path) -> None:
     if not OPENROUTER_API_KEY:
         raise RuntimeError("Set OPENROUTER_API_KEY in .env or the environment.")
+    labels = (
+        "Image 1 is a flat skin-tone swatch. It is not a person. Match this skin tone only.",
+        "Image 2 is a flat hair-color swatch. It is not a person. Match this hair color only.",
+    )
     content: list[dict] = [{
         "type": "text",
         "text": (
-            "The following photos are of one real adult. Use them only as "
-            "photographic reference. The face you create must be a different person."
+            "The following images are flat color swatches. They do not show a face. "
+            "Create the new person described after them."
         ),
     }]
-    for index, path in enumerate(images, start=1):
-        content.append({
-            "type": "text",
-            "text": f"Reference {index}, file {path.name}. Do not reproduce this person.",
-        })
+    for label, path in zip(labels, images):
+        content.append({"type": "text", "text": label})
         content.append(image_part(path))
     content.append({"type": "text", "text": prompt})
     response = requests.post(
@@ -163,8 +243,8 @@ def write_provenance(
         "approval: pending",
         "",
         "process:",
-        "Reference photos were sent only as realism and appearance context.",
-        "The prompt requires a new adult identity and forbids a recognizable copy of the reference person.",
+        "The reference portraits were kept for provenance and were not sent to the model.",
+        "The model received a skin-tone swatch and a hair-color swatch, plus a written description of a new face.",
         "",
         "source_files:",
     ]
@@ -197,7 +277,7 @@ def create_face(sources: list[Path], note: str, age_range: str, hair: str) -> tu
     if len(sources) < MIN_REFERENCES or len(sources) > MAX_REFERENCES:
         raise ValueError(f"Use {MIN_REFERENCES} to {MAX_REFERENCES} photos of one adult.")
 
-    prompt = face_prompt(age_range, hair)
+    prompt = face_prompt(age_range, hair, new_features())
     face_id = datetime.now().strftime("%Y%m%d_%H%M%S")
     folder = PROJECT_ROOT / "outputs" / "faces" / face_id
     source_dir = folder / "sources"
@@ -208,18 +288,18 @@ def create_face(sources: list[Path], note: str, age_range: str, hair: str) -> tu
         shutil.copy2(source, destination)
         kept.append(destination)
 
-    prepared = compress_images(kept, folder / "references")
-    summary = report(prepared)
+    swatches = color_swatches(kept, folder / "swatches")
+    summary = "Sent a skin swatch and a hair swatch. The reference portraits were not sent."
     print(summary)
     image_path = folder / "face.png"
     print("Generating a new face.")
-    generate(prompt, [item.output for item in prepared], image_path)
+    generate(prompt, swatches, image_path)
     notes_path = folder / "provenance.txt"
     write_provenance(
         notes_path,
         face_id,
         kept,
-        [item.output for item in prepared],
+        swatches,
         prompt,
         note,
         age_range,
