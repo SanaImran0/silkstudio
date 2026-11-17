@@ -1,0 +1,42 @@
+face_id: 20261116_153856
+created_at: 2026-11-16T10:39:29Z
+model: google/gemini-3.1-flash-image-preview
+aspect_ratio: 5:4
+image_size: 4K
+age_range: 18-24
+hair: Black hair, open
+source_note: google
+approval: pending
+
+process:
+The reference portraits were kept for provenance and were not sent to the model.
+The model received a skin-tone swatch and a hair-color swatch, plus a written description of a new face.
+
+source_files:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_153856/sources/01_01_hania-amir2.webp
+   sha256: 633cf0d3d899407007e6749229d679fceea0e31c27f089296a75b44b6f222a6e
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_153856/sources/02_02_hania-amir3.webp
+   sha256: be31b1a0bd83e5ffdbc313248cccc05e6af3f18ff73d43a4ef3d532f1b6ca64d
+3. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_153856/sources/03_03_hania-amir4.webp
+   sha256: e0a50d71e5ad107083a938ddf0fbbdf6b081e54bf87f7ecdc2a63bed19bc05a7
+
+files_sent_to_model:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_153856/swatches/skin_swatch.png
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_153856/swatches/hair_swatch.png
+
+prompt:
+Create one professional model-casting portrait of a newly synthesized adult woman, in the style of a high-end fashion agency or e-commerce model gallery card. Exactly one person, one frame. Not a grid, collage, or set of alternate looks.
+
+No photograph of a person is attached. The small images are flat color swatches: the first is skin tone, the second is hair color. They contain no face. Do not reconstruct anyone from them, and do not draw a real public figure. Build only the new face described below.
+
+Her new face: a long elegant oval face with a clearly defined jawline, large almond eyes with a slight upward tilt and a defined crease, a slim nose with a softly defined tip, a full lower lip and a clean, defined upper lip, and a defined, tapered jawline and a refined chin. She is an original adult, apparent age 18-24, with refined South Asian features suited to Pakistani and Indian fashion campaigns. She has the striking but natural look of a working runway and editorial model: strong bone structure, harmonious proportions, clear well-groomed brows, and a polished, high-end presence.
+
+Framing: portrait-style casting headshot, head and shoulders, in a 5:4 frame. Her face is the clear subject and fills roughly 55 to 60 percent of the frame height; both shoulders and the top of the white tank are visible, and there is soft grey space on both sides. Camera at eye level, 85mm portrait lens, shallow depth, tack-sharp eyes. Her body is turned very slightly (about 10 to 15 degrees) while her head faces the camera, chin level to slightly lowered, shoulders relaxed and down. Not a frontal passport pose.
+
+Expression: calm, composed, confident. Lips relaxed and closed, at most the faintest softness at the corners of the mouth. Direct, steady, intelligent gaze into the lens. No broad smile, no teeth, no laugh, no frown, no sadness, no heavy lids. The face is neither blank nor cheerful: the neutral, assured look of a model on a casting card.
+
+Hair: Black hair, open. Professionally styled, healthy and glossy, with natural movement and a few fine flyaways at the hairline. She wears a plain, fitted white ribbed tank top with a clean neckline, and nothing else: no jewellery, no earrings in frame, no text.
+
+Skin and makeup: polished editorial retouching that keeps real skin texture, with fine pores and natural variation visible. Even, luminous base, subtle contour that defines the cheekbones, soft natural flush, neat brows, defined lashes, soft nude-rose lip. Clean and camera-ready, never heavy, never plastic.
+
+Light: a large soft beauty-dish source slightly above and in front, with gentle fill and a soft kicker from one side so the cheekbones, nose, and jaw show real sculpting depth. Bright, clean skin with a soft highlight, and a catchlight in each eye. Seamless light-grey studio backdrop with a very subtle gradient. A real studio photograph, not a 3D render, not a flat identity or visa photo, no beauty filter, no waxy highlights, no distorted ears or hands. No text, logo, watermark, or other people.

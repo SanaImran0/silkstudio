@@ -1,0 +1,30 @@
+{
+  "face_id": "20261116_194645",
+  "age_range": "18-24",
+  "size": "XS-S",
+  "skin": "light wheatish",
+  "hair_color": "dark brown",
+  "hairstyle": "Long hair, sleek look, open",
+  "traits": {
+    "face_shape": "oval with rounded jaw",
+    "forehead": "medium height, gently curved",
+    "brows": "medium arch, slightly tapered",
+    "eyes": "large, rounder dark eyes",
+    "nose": "a straight nose with a soft rounded tip",
+    "lips": "full, well-defined cupid's bow",
+    "jaw_and_chin": "a soft jaw with a rounded chin",
+    "cheekbones": "subtly defined, medium prominence"
+  },
+  "trait_origin": {
+    "face_shape": "photo 2",
+    "forehead": "photo 1",
+    "brows": "photo 3",
+    "eyes": "variation",
+    "nose": "variation",
+    "lips": "photo 2",
+    "jaw_and_chin": "variation",
+    "cheekbones": "photo 3"
+  },
+  "image": "face.png",
+  "approval": "pending"
+}

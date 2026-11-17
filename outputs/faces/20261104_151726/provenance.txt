@@ -1,0 +1,38 @@
+face_id: 20261104_151726
+created_at: 2026-11-04T10:20:15Z
+model: google/gemini-3.1-flash-image-preview
+aspect_ratio: 3:4
+image_size: 2K
+age_range: 18-24
+hair: Messy Hair Bun
+source_note: Ayeza Khan
+approval: pending
+
+process:
+Reference photos were sent only as realism and appearance context.
+The prompt requires a new adult identity and forbids a recognizable copy of the reference person.
+
+source_files:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_151726/sources/01_01_ayza-khan3.jpg
+   sha256: c82d9ab9731564a551299d4b565dbedc7d043fc775b10492c00378c01b0ee2a0
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_151726/sources/02_02_ayza-khan6.jpg
+   sha256: 9132704361531147a6e49fbde3d6ce22f502200a6d85838813f410d23e220378
+
+files_sent_to_model:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_151726/references/01_01_01_ayza-khan3.jpg
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_151726/references/02_02_02_ayza-khan6.jpg
+
+prompt:
+Create one studio photograph of a newly synthesized adult woman for a commercial fashion model library. Exactly one person, in one frame. Not a grid, collage, or set of alternate looks.
+
+The attached photos are not the woman to depict. Do not draw her, a retouched version of her, a relative, or anyone who could be recognized as her. Borrow only a general South Asian skin tone and the look of a real photograph. Discard her bone structure, eye shape, nose, mouth, jaw, brows, and marks.
+
+Her new face is: a longer, narrower face, slightly hooded eyes, a longer, straighter nose, a wider mouth, and a soft jaw and a rounded chin. These features replace the face in the photos. Keep her an original adult, apparent age 18-24, with South Asian features suitable for Pakistani and Indian fashion photography.
+
+Photograph her as a model gallery card. She faces the camera directly, head level, shoulders square, centered, framed from the mid-chest up. Eyes open and looking into the lens, calm and confident. Mouth relaxed and closed. No smile, no frown, no sorrow, no heavy lids, and no vacant stare.
+
+Normal adult proportions. Her head is not enlarged. Both shoulders are in frame and are wider than her head. Her neck is a natural length, not long or thin. Leave a little space around the hair. Do not crop so tightly that the face overwhelms the body.
+
+Hair: Messy Hair Bun. A few loose strands at the hairline. She wears a plain white tank top with visible fine-knit texture. Light makeup only: groomed brows, mascara, and a soft muted lip. Skin still shows pores, faint color variation, and fine facial hair. The face is slightly asymmetrical.
+
+Light a large soft source from slightly above and in front, a little to one side, with enough fill that the shadows stay gentle. The nose, cheekbones, and jaw have real depth, and each eye has a small catchlight. Seamless very light grey background. A studio photograph from a camera, not a flat identity photo and not a 3D render. No beauty filter, no plastic skin, no waxy highlights, no extra fingers, no distorted ears. No text, logo, watermark, or other people.

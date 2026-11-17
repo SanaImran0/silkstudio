@@ -1,0 +1,17 @@
+created_at: 2026-11-04T12:14:00Z
+model: google/gemini-3.1-flash-image-preview
+image_size: 2K
+identity: /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/poses/20261104_165853/model.png
+
+Each file is one camera angle of this same model.
+The full-length front locks the clothes and body for the other seven.
+
+poses:
+- 01_full_front.png: Full body, front
+- 02_full_left.png: Full body, left profile
+- 03_full_right.png: Full body, right profile
+- 04_full_back.png: Full body, back
+- 05_head_front.png: Head and shoulders, front
+- 06_head_left.png: Head and shoulders, left profile
+- 07_head_three_quarter.png: Head and shoulders, right three-quarter
+- 08_head_back.png: Head and shoulders, back

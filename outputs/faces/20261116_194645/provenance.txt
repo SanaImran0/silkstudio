@@ -1,0 +1,64 @@
+face_id: 20261116_194645
+created_at: 2026-11-16T14:47:19Z
+image_model: google/gemini-3.1-flash-image-preview
+trait_model: google/gemini-2.5-flash
+aspect_ratio: 5:4
+image_size: 4K
+age_range: 18-24
+size: XS-S
+skin: light wheatish
+hair_color: dark brown
+hairstyle: Long hair, sleek look, open
+source_note: Dananeer Mobeen, Mawra Hocane, and Hania Amir, images from google
+approval: pending
+
+process:
+Each reference photo was sent to the trait model only to write general facial-structure phrases.
+No reference photo was sent to the image model. It received the written feature list below.
+Traits were mixed across the photos, and two or three were replaced by natural variations.
+
+blended_traits:
+- face_shape: oval with rounded jaw  [photo 2]
+- forehead: medium height, gently curved  [photo 1]
+- brows: medium arch, slightly tapered  [photo 3]
+- eyes: large, rounder dark eyes  [variation]
+- nose: a straight nose with a soft rounded tip  [variation]
+- lips: full, well-defined cupid's bow  [photo 2]
+- jaw_and_chin: a soft jaw with a rounded chin  [variation]
+- cheekbones: subtly defined, medium prominence  [photo 3]
+
+source_files:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_194645/sources/01_01_Dananeer-mobeen2.jpg
+   sha256: bf819fabe0678d42d84ba56327a3960a574ad3797c41b8a3ebd65c6ece40e54f
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_194645/sources/02_02_hania-amir4.webp
+   sha256: e0a50d71e5ad107083a938ddf0fbbdf6b081e54bf87f7ecdc2a63bed19bc05a7
+3. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_194645/sources/03_03_mawra-hocane3.webp
+   sha256: d6cf070b7378c328424c46f2ec1a4585803dfabe9e3b888e1a04fb83f72012a2
+
+prompt:
+A real digital casting photograph of one adult Pakistani woman, taken by an agency photographer for a model portfolio. Exactly one person, one frame. Not a grid, collage, or set of alternate looks. It must look like a photograph taken with a camera, not like AI art or a render.
+
+No photograph of a person is attached. Do not draw any real or public figure. Build only the woman described here.
+
+Her face, built from this feature list:
+- face shape: oval with rounded jaw
+- forehead: medium height, gently curved
+- brows: medium arch, slightly tapered
+- eyes: large, rounder dark eyes
+- nose: a straight nose with a soft rounded tip
+- lips: full, well-defined cupid's bow
+- jaw and chin: a soft jaw with a rounded chin
+- cheekbones: subtly defined, medium prominence
+Real irregularities, kept subtle: subtle pigment variation across the bridge of the nose; a faint natural crease beside one eye. Her face is not perfectly symmetrical and not idealised. The features are attractive but real, the way a working fashion model looks without retouching. Apparent age 18-24.
+
+Skin: light wheatish skin with a warm golden undertone, a light Pakistani complexion. Skin tone is slightly uneven across the face, as in life: a little more colour on the cheeks and nose, a touch cooler and shadowed under the eyes, faint redness near the nostrils. Visible pores on the cheeks, nose and forehead, fine texture, tiny vellus hairs catching the light along the jaw and temples, natural lip texture. No airbrushing, no skin smoothing, no beauty filter, no glow, no glassy or waxy highlight, no plastic look. Makeup is minimal: groomed natural brows, a barely-there base, a slight lip tint.
+
+Hair: dark brown hair, Long hair, sleek look, open. Individual strands are visible, with an uneven parting, a few flyaways, soft frizz at the hairline, and slight natural variation in tone. Real hair, not glossy, not helmet-like, not a wig, no AI-smooth clumps.
+
+Body: slim build: narrow shoulders, a slim neck, visible collarbones, a slim face with light cheeks. She wears a plain white fitted ribbed tank top with a clean round neckline and visible fabric texture. No jewellery, no text.
+
+Framing: head and shoulders in a 5:4 frame. Her face fills about half of the frame height, both shoulders are in frame, and there is soft background on both sides. Eye level, head turned very slightly from her shoulders, chin level, shoulders relaxed. Not a stiff passport pose.
+
+Expression: relaxed and natural, as if caught a moment before a smile. Lips soft and closed, the corners neutral to very slightly lifted, with a little life in the eyes and a steady gaze toward the lens. No posed smile, no teeth, no frown, no blank stare.
+
+Camera and light: 85mm lens at f/2.8, ISO 200, a large softbox slightly above and to one side with gentle fill, natural light falloff, one soft catchlight per eye, sharp focus on the eyes with a gentle fall-off at the ears. Plain mid-grey seamless backdrop. Natural colour, mild photographic grain, true-to-life contrast. No watermark, no logo, no extra people, no extra fingers, no distorted ears.

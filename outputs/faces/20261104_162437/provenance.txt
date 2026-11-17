@@ -1,0 +1,40 @@
+face_id: 20261104_162437
+created_at: 2026-11-04T11:26:58Z
+model: google/gemini-3.1-flash-image-preview
+aspect_ratio: 5:4
+image_size: 4K
+age_range: 18-24
+hair: Open
+source_note: Ayeza Khan
+approval: pending
+
+process:
+The reference portraits were kept for provenance and were not sent to the model.
+The model received a skin-tone swatch and a hair-color swatch, plus a written description of a new face.
+
+source_files:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_162437/sources/01_01_ayza-khan7.jpg
+   sha256: 685a61db381a0e8a80ecd81da37047964454b9e647842ea7f8cb8226f85010dc
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_162437/sources/02_02_ayza-khan5.jpg
+   sha256: 5f83907373b7f389c0ac3ac3de6ba46368f5ff94d46517c7d7db75abddea9cdd
+3. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_162437/sources/03_03_ayza-khan8.jpeg
+   sha256: aeccbd51148d6f84116305d780e8e23921a2059eb35bd69380036f26ff838abb
+
+files_sent_to_model:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_162437/swatches/skin_swatch.png
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_162437/swatches/hair_swatch.png
+
+prompt:
+Create one studio photograph of a newly synthesized adult woman for a commercial fashion model library. Exactly one person, in one frame. Not a grid, collage, or set of alternate looks.
+
+No photograph of a person is attached. The small images are flat color swatches: the first is skin tone, the second is hair color. They contain no face. Do not reconstruct anyone from them, and do not draw a real public figure. Build only the new face described below.
+
+Her new face is: a softly square face, almond eyes set wider apart, a broader nose with a soft tip, a wider mouth, and a narrow chin. These features replace the face in the photos. Keep her an original adult, apparent age 18-24, with South Asian features suitable for Pakistani and Indian fashion photography.
+
+Photograph her as a model gallery card in a 5:4 frame. She faces the camera directly, head level, shoulders square, centered, framed from the mid-chest up, with a little plain background on both sides. Her expression is alive: a small closed-mouth smile that reaches her eyes, the way a model looks when she is comfortable with the photographer. Eyes bright, open, and engaged with the lens, with a little warmth at the outer corners. Not a blank face, not a dull or tired face, not a wide grin, and not a show of teeth. No frown, no sorrow, and no heavy lids.
+
+Normal adult proportions. Her head is not enlarged. Both shoulders are in frame and are wider than her head. Her neck is a natural length, not long or thin. Leave a little space around the hair. Do not crop so tightly that the face overwhelms the body.
+
+Hair: Open. A few loose strands at the hairline. She wears a plain white tank top with visible fine-knit texture. No-makeup makeup: skin looks like her own skin, even and fresh, with a soft natural flush on the cheeks and pores still visible. Brows are brushed into shape, lashes are defined with mascara, and the lip color is close to her natural lip. No foundation mask, no contour, no dark lipstick, and no glassy highlight. The face is slightly asymmetrical.
+
+Light a large soft source from slightly above and in front, a little to one side, with enough fill that the face stays bright rather than flat or grey. The nose, cheekbones, and jaw have real depth, and each eye has a small catchlight. Seamless very light grey background. A studio photograph from a camera, not a flat identity photo and not a 3D render. No beauty filter, no plastic skin, no waxy highlights, no extra fingers, no distorted ears. No text, logo, watermark, or other people.

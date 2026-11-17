@@ -6,10 +6,3 @@ node_modules/
 
 .DS_Store
 __pycache__/
-
-outputs/
-inputs/
-uploads/
-outputs/*
-inputs/*
-uploads/*

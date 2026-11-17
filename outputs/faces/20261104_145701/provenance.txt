@@ -1,0 +1,34 @@
+face_id: 20261104_145701
+created_at: 2026-11-04T09:59:52Z
+model: google/gemini-3.1-flash-image-preview
+aspect_ratio: 3:4
+image_size: 2K
+age_range: 18-24
+hair: just as given
+source_note: Botika's library
+approval: pending
+
+process:
+Reference photos were sent only as realism and appearance context.
+The prompt requires a new adult identity and forbids a recognizable copy of the reference person.
+
+source_files:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_145701/sources/01_01_Screenshot_2026-11-04_at_2_44_48_PM.png
+   sha256: 78c11e93b8953be9fe58edd5583d655e80f7a57fc0f684b452d51e7b8abe1327
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_145701/sources/02_02_Screenshot_2026-11-04_at_2_44_48_PM.png
+   sha256: 78c11e93b8953be9fe58edd5583d655e80f7a57fc0f684b452d51e7b8abe1327
+
+files_sent_to_model:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_145701/references/01_01_01_Screenshot_2026-11-04_at_2_44_48_PM.jpg
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_145701/references/02_02_02_Screenshot_2026-11-04_at_2_44_48_PM.jpg
+
+prompt:
+Create one photograph of a new adult woman for a commercial fashion model library. Exactly one person, in one frame. Not a grid, collage, or set of alternate looks.
+
+The attached photos are reference material only. They show a real person. Do not depict that person. Do not make a lookalike, a relative, an aged or younger version, or a face that someone who knows her would recognize. Change the face shape, the distance between the eyes, the nose, the lips, the jaw, the chin, the brow, and the ears so the result is a different individual. Do not copy her moles, marks, or distinctive features.
+
+Photograph her the way a fashion model gallery card is shot. She faces the camera directly. Head level, shoulders square, body centered, framed from the mid-chest up. Eyes open and looking straight into the lens, calm and confident. Mouth relaxed and closed. No smile, no frown, no sorrow, no heavy lids, and no vacant stare.
+
+She is an original adult, apparent age 18-24, with South Asian features suitable for Pakistani and Indian fashion photography. Hair: just as given. Use that description for this one portrait only. A few loose strands at the hairline, not a solid sheet of hair. She wears a plain white tank top with a real neckline and visible fine-knit texture. Light makeup only: groomed brows, mascara, and a soft muted lip, with pores, faint color variation, and fine facial hair still visible. The face is slightly asymmetrical.
+
+Light a large soft source from slightly above and in front, a little to one side, with enough fill that the shadows stay gentle. The nose, cheekbones, and jaw should have real depth, and each eye should have a small catchlight. Seamless very light grey background. This must look like a studio photograph from a camera, with dimension in the face, not a flat identity photo and not a 3D render. No beauty filter, no plastic skin, no waxy highlights, no extra fingers, no distorted ears. No text, logo, watermark, or other people.

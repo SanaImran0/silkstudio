@@ -1,0 +1,50 @@
+face_id: 20261027_020633
+created_at: 2026-10-26T21:06:52Z
+model: google/gemini-3.1-flash-image-preview
+aspect_ratio: 3:4
+image_size: 2K
+age_range: 18-24
+hair: black hair, length till waist, create 2 looks, 1 with moors, 1 open hair centre part
+source_note: Google images, pinterest, clothing-brands, blogs, etc.
+approval: pending
+
+process:
+Reference photos were sent only as realism and appearance context.
+The prompt requires a new adult identity and forbids a recognizable copy of the reference person.
+
+source_files:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/sources/01_01_sajal-aly-3.jpg
+   sha256: 17dae0107a9b1baf6bad2759f5936bd5624ff7453f4ac8d9e11cc450c1a319e5
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/sources/02_02_sajal-aly1.jpeg
+   sha256: 10c9ef3f0eec0ad7c61e016b64d58e07553355775cbf3a5db2e91fc017b8329c
+3. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/sources/03_03_sajal-aly2.jpg
+   sha256: d64a7c40718ff6675534ab552c239c3e5d0ae42cfe3ce79dd1e13c3fa14e6a3f
+4. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/sources/04_04_sajal-aly4.jpeg
+   sha256: 2d9ab6dd9c1c480aef8112d5f54b3f22eb0e3f4e59f03703e7cc682e780ec3c4
+5. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/sources/05_05_sajal-aly5.jpg
+   sha256: b34e08cfc98395d4acefe06e837a2c02d1728963dfb6311c54f253bcfd7bfdb9
+6. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/sources/06_06_sajal-aly6.jpg
+   sha256: 6a92d27c333a516913bde675042be8bd467f2dbf76ae7979dad0ef4cc2bda246
+7. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/sources/07_07_sajal-aly7.jpg
+   sha256: ad4034774e3f09bcf1a07e86706d2d47a948dc8321534e7e61102e6e82a1614f
+8. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/sources/08_08_sajal-aly8.jpg
+   sha256: dcb44ee5e6e6b1965319acedc0aa29109faa7f1d0f3489c164855a4a35ebb33c
+
+files_sent_to_model:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/references/01_01_01_sajal-aly-3.jpg
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/references/02_02_02_sajal-aly1.jpg
+3. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/references/03_03_03_sajal-aly2.jpg
+4. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/references/04_04_04_sajal-aly4.jpg
+5. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/references/05_05_05_sajal-aly5.jpg
+6. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/references/06_06_06_sajal-aly6.jpg
+7. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/references/07_07_07_sajal-aly7.jpg
+8. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_020633/references/08_08_08_sajal-aly8.jpg
+
+prompt:
+Create one photograph of a new adult woman for a commercial fashion model library. Exactly one person, in one frame. Not a grid, collage, or set of alternate looks.
+
+The attached photos are reference material only. They show a real person. Do not depict that person. Do not make a lookalike, a relative, an aged or younger version, or a face that someone who knows her would recognize. Change the face shape, the distance between the eyes, the nose, the lips, the jaw, the chin, the brow, and the ears so the result is a different individual. Do not copy her moles, marks, or distinctive features.
+
+She should look like a working fashion model during a catalog shoot, not a person sitting for a passport or identity photo. Turn her body slightly, with one shoulder closer to the camera, and let her head sit at a small natural angle. Her eyes meet the lens and are alive: a little warmth in them, as if she has just been spoken to. A small real smile, the kind that changes the eyes, not a blank closed mouth and not a wide grin. No sorrow, no heavy lids, no vacant stare, and no frown.
+
+She is an original adult, apparent age 18-24, with South Asian features suitable for Pakistani and Indian fashion photography. Hair: black hair, length till waist, create 2 looks, 1 with moors, 1 open hair centre part. Use that description for this one portrait only. A few loose strands and flyaways, not a solid sheet of hair. She wears a simple black fine-knit top with a real neckline, seams, and fabric texture. Shoulders are covered. Light daytime makeup only: groomed brows, a thin coat of mascara, a soft muted lip color, and skin that still shows pores, faint color variation, and fine facial hair underneath. No glam, no contour stripes, no glassy highlight. Eyes have depth, a moist surface, and uneven lashes. The face is slightly asymmetrical, the way a real face is. Light comes from one side, so the cheek and neck have a gentle shadow. Plain light-grey studio background. This must look like a photograph from a camera, not a rendered or retouched face. No beauty filter, no plastic skin, no waxy highlights, no extra fingers, no distorted ears. No text, logo, watermark, or other people.

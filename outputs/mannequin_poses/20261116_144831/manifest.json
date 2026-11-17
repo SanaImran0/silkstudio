@@ -1,0 +1,265 @@
+{
+  "created_at": "2026-11-16T10:10:55Z",
+  "model": "google/gemini-3.1-flash-image-preview",
+  "aspect_ratio": "9:16",
+  "image_size": "4K",
+  "master": "master.png",
+  "poses": [
+    {
+      "id": "standing_front",
+      "category": "standing",
+      "label": "Standing, front",
+      "instruction": "Standing straight facing the camera, weight even, arms relaxed beside the body with a small gap from the torso, feet hip-width apart.",
+      "file": "poses/standing_front.png",
+      "status": "done"
+    },
+    {
+      "id": "standing_front_narrow",
+      "category": "standing",
+      "label": "Standing, front, feet together",
+      "instruction": "Standing straight facing the camera, feet together, arms hanging straight and close to the body so the full side seams of a dress would be visible.",
+      "file": "poses/standing_front_narrow.png",
+      "status": "done"
+    },
+    {
+      "id": "standing_back",
+      "category": "standing",
+      "label": "Standing, back",
+      "instruction": "Seen from directly behind, standing straight, arms relaxed beside the body, feet hip-width apart. Back of the head toward the camera.",
+      "file": "poses/standing_back.png",
+      "status": "done"
+    },
+    {
+      "id": "standing_left",
+      "category": "standing",
+      "label": "Standing, left profile",
+      "instruction": "Strict left profile, body side-on facing the left edge of the frame, arms relaxed, feet slightly apart.",
+      "file": "poses/standing_left.png",
+      "status": "done"
+    },
+    {
+      "id": "standing_right",
+      "category": "standing",
+      "label": "Standing, right profile",
+      "instruction": "Strict right profile, body side-on facing the right edge of the frame, arms relaxed, feet slightly apart.",
+      "file": "poses/standing_right.png",
+      "status": "done"
+    },
+    {
+      "id": "standing_three_quarter_left",
+      "category": "standing",
+      "label": "Standing, three-quarter left",
+      "instruction": "Body turned about 45 degrees toward the left edge of the frame, head turned slightly back toward the camera, arms relaxed.",
+      "file": "poses/standing_three_quarter_left.png",
+      "status": "done"
+    },
+    {
+      "id": "standing_three_quarter_right",
+      "category": "standing",
+      "label": "Standing, three-quarter right",
+      "instruction": "Body turned about 45 degrees toward the right edge of the frame, head turned slightly back toward the camera, arms relaxed.",
+      "file": "poses/standing_three_quarter_right.png",
+      "status": "done"
+    },
+    {
+      "id": "standing_back_three_quarter",
+      "category": "standing",
+      "label": "Standing, back three-quarter",
+      "instruction": "Seen from behind and slightly to the side, body turned about 45 degrees away from the camera, arms relaxed, head turned slightly toward the side.",
+      "file": "poses/standing_back_three_quarter.png",
+      "status": "done"
+    },
+    {
+      "id": "hip_right_front",
+      "category": "hand_on_hip",
+      "label": "Right hand on hip, front",
+      "instruction": "Facing the camera, right hand resting on the hip with the elbow out, left arm relaxed, weight on the left leg, right knee slightly bent.",
+      "file": "poses/hip_right_front.png",
+      "status": "done"
+    },
+    {
+      "id": "hip_left_front",
+      "category": "hand_on_hip",
+      "label": "Left hand on hip, front",
+      "instruction": "Facing the camera, left hand resting on the hip with the elbow out, right arm relaxed, weight on the right leg, left knee slightly bent.",
+      "file": "poses/hip_left_front.png",
+      "status": "done"
+    },
+    {
+      "id": "hip_both_front",
+      "category": "hand_on_hip",
+      "label": "Both hands on hips, front",
+      "instruction": "Facing the camera, both hands on the hips with the elbows out, feet shoulder-width apart, upright confident stance.",
+      "file": "poses/hip_both_front.png",
+      "status": "done"
+    },
+    {
+      "id": "hip_right_three_quarter",
+      "category": "hand_on_hip",
+      "label": "Hand on hip, three-quarter",
+      "instruction": "Body turned about 45 degrees to the right, right hand on the hip, left arm relaxed, one foot slightly forward.",
+      "file": "poses/hip_right_three_quarter.png",
+      "status": "done"
+    },
+    {
+      "id": "walk_front_a",
+      "category": "walking",
+      "label": "Walking toward camera, right foot forward",
+      "instruction": "Mid-stride walking toward the camera, right foot forward, arms swinging naturally, steps of moderate length, upright posture.",
+      "file": "poses/walk_front_a.png",
+      "status": "done"
+    },
+    {
+      "id": "walk_front_b",
+      "category": "walking",
+      "label": "Walking toward camera, left foot forward",
+      "instruction": "Mid-stride walking toward the camera, left foot forward, arms swinging naturally, steps of moderate length, upright posture.",
+      "file": "poses/walk_front_b.png",
+      "status": "done"
+    },
+    {
+      "id": "walk_side_left",
+      "category": "walking",
+      "label": "Walking, left profile",
+      "instruction": "Mid-stride walking in strict left profile toward the left edge of the frame, one foot ahead of the other, arms swinging gently.",
+      "file": "poses/walk_side_left.png",
+      "status": "done"
+    },
+    {
+      "id": "walk_side_right",
+      "category": "walking",
+      "label": "Walking, right profile",
+      "instruction": "Mid-stride walking in strict right profile toward the right edge of the frame, one foot ahead of the other, arms swinging gently.",
+      "file": "poses/walk_side_right.png",
+      "status": "done"
+    },
+    {
+      "id": "walk_away",
+      "category": "walking",
+      "label": "Walking away",
+      "instruction": "Seen from behind, mid-stride walking away from the camera, one foot ahead, arms swinging gently.",
+      "file": "poses/walk_away.png",
+      "status": "done"
+    },
+    {
+      "id": "step_pause_front",
+      "category": "walking",
+      "label": "Runway pause, front",
+      "instruction": "Runway pause facing the camera: one foot placed slightly in front of the other, hips slightly angled, arms relaxed at the sides.",
+      "file": "poses/step_pause_front.png",
+      "status": "done"
+    },
+    {
+      "id": "dupatta_hold_one_arm_front",
+      "category": "dupatta_hold",
+      "label": "Right forearm raised, front",
+      "instruction": "Facing the camera, right elbow bent with the forearm held up across the front of the torso at waist height, left arm relaxed. Leave the pose open so a dupatta could drape over the forearm.",
+      "file": "poses/dupatta_hold_one_arm_front.png",
+      "status": "done"
+    },
+    {
+      "id": "dupatta_hold_both_arms_front",
+      "category": "dupatta_hold",
+      "label": "Both forearms forward, front",
+      "instruction": "Facing the camera, both elbows bent and both forearms held forward at waist height, hands slightly apart, as if holding the ends of a scarf. Hands empty.",
+      "file": "poses/dupatta_hold_both_arms_front.png",
+      "status": "done"
+    },
+    {
+      "id": "dupatta_shoulder_left",
+      "category": "dupatta_hold",
+      "label": "Left hand at shoulder, front",
+      "instruction": "Facing the camera, left hand raised to touch the left shoulder as if adjusting a dupatta, right arm relaxed. Hand empty.",
+      "file": "poses/dupatta_shoulder_left.png",
+      "status": "done"
+    },
+    {
+      "id": "dupatta_shoulder_right",
+      "category": "dupatta_hold",
+      "label": "Right hand at shoulder, front",
+      "instruction": "Facing the camera, right hand raised to touch the right shoulder as if adjusting a dupatta, left arm relaxed. Hand empty.",
+      "file": "poses/dupatta_shoulder_right.png",
+      "status": "done"
+    },
+    {
+      "id": "dupatta_hold_back",
+      "category": "dupatta_hold",
+      "label": "Both hands low behind, back",
+      "instruction": "Seen from behind, both arms slightly bent and held a little away from the body so a dupatta's back drape would stay visible.",
+      "file": "poses/dupatta_hold_back.png",
+      "status": "done"
+    },
+    {
+      "id": "dupatta_hold_side",
+      "category": "dupatta_hold",
+      "label": "Forearm raised, left profile",
+      "instruction": "Strict left profile, near forearm raised in front of the torso at waist height, elbow bent, other arm relaxed.",
+      "file": "poses/dupatta_hold_side.png",
+      "status": "done"
+    },
+    {
+      "id": "arms_crossed_front",
+      "category": "gesture",
+      "label": "Arms crossed, front",
+      "instruction": "Facing the camera, arms crossed loosely at the waist, upright posture, feet hip-width apart.",
+      "file": "poses/arms_crossed_front.png",
+      "status": "done"
+    },
+    {
+      "id": "hands_clasped_front",
+      "category": "gesture",
+      "label": "Hands clasped, front",
+      "instruction": "Facing the camera, both hands lightly clasped in front of the waist, shoulders relaxed, feet together.",
+      "file": "poses/hands_clasped_front.png",
+      "status": "done"
+    },
+    {
+      "id": "hands_behind_front",
+      "category": "gesture",
+      "label": "Hands behind back, front",
+      "instruction": "Facing the camera, both hands held behind the back, chest slightly open, feet hip-width apart.",
+      "file": "poses/hands_behind_front.png",
+      "status": "done"
+    },
+    {
+      "id": "one_arm_raised_front",
+      "category": "gesture",
+      "label": "One hand to hair, front",
+      "instruction": "Facing the camera, right hand raised toward the side of the head, left arm relaxed, head slightly tilted, weight on the left leg.",
+      "file": "poses/one_arm_raised_front.png",
+      "status": "done"
+    },
+    {
+      "id": "lift_skirt_front",
+      "category": "gesture",
+      "label": "Hands at skirt level, front",
+      "instruction": "Facing the camera, both hands slightly lifted at hip level and held a little away from the body, as if gathering a long skirt. Hands empty.",
+      "file": "poses/lift_skirt_front.png",
+      "status": "done"
+    },
+    {
+      "id": "twirl_back_look",
+      "category": "gesture",
+      "label": "Looking back over shoulder",
+      "instruction": "Body turned away from the camera at three-quarter back, head turned back over the left shoulder toward the camera, arms relaxed.",
+      "file": "poses/twirl_back_look.png",
+      "status": "done"
+    },
+    {
+      "id": "seated_front",
+      "category": "seated",
+      "label": "Seated on a stool, front",
+      "instruction": "Seated on a simple plain grey cube stool facing the camera, back straight, knees together, hands resting on the thighs. The stool is part of the pose.",
+      "file": "poses/seated_front.png",
+      "status": "done"
+    },
+    {
+      "id": "seated_side",
+      "category": "seated",
+      "label": "Seated on a stool, left profile",
+      "instruction": "Seated on a simple plain grey cube stool in strict left profile, back straight, knees together, hands resting on the thighs.",
+      "file": "poses/seated_side.png",
+      "status": "done"
+    }
+  ]
+}

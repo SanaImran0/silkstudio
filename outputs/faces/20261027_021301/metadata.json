@@ -1,0 +1,34 @@
+{
+  "name": "Suhaye",
+  "age_range": "18-24",
+  "size": "S-M",
+  "height": "average",
+  "shape": "hourglass",
+  "skin": "fair",
+  "eye_color": "hazel",
+  "hair_color": "dark brown",
+  "hairstyle": "Curly open hair, lengthy till waist",
+  "vibe": "fresh",
+  "face_id": "20261027_021301",
+  "approval": "pending",
+  "body_description": "average build: medium shoulder width, a natural neck, softly visible collarbones, a face of average fullness; height: average height, about 5'5\" to 5'7\"; an hourglass silhouette: balanced shoulders and hips, a defined waist",
+  "updated_at": "2026-11-17T16:19:59Z",
+  "face_edits": [
+    {
+      "at": "2026-11-17T14:13:07Z",
+      "prompt": "She should not have the oh so perfect features but still be looking like a professional model. The skin should feel real the eye colour and expression should be lively and her skin tone should be fair/light whitish. use the reference images to buy a blend of features and also use the details from metadata"
+    },
+    {
+      "at": "2026-11-17T14:16:40Z",
+      "prompt": "She should not have the oh so perfect features but still be looking like a professional model. The skin should feel real the eye colour and expression should be lively and her skin tone should be fair/light whitish. use the reference images to buy a blend of features and also use the details from metadata \n\nUse the eyes features of reference image 1, nose features from reference image 2, and lips features from reference image 3."
+    },
+    {
+      "at": "2026-11-17T15:12:10Z",
+      "prompt": "Use the eyes features of reference1, nose features from reference2, and lips features from reference3."
+    },
+    {
+      "at": "2026-11-17T16:19:59Z",
+      "prompt": "She should not have the oh so perfect features but still be looking like a professional model. The skin should feel real the eye colour and expression should be lively and her skin tone should be fair/light whitish. use the reference images to buy a blend of features and also use the details from metadata \nUse the eyes features of reference1, nose features from reference2, and lips features from reference3."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+face_id: 20261116_152637
+created_at: 2026-11-16T10:27:09Z
+model: google/gemini-3.1-flash-image-preview
+aspect_ratio: 5:4
+image_size: 4K
+age_range: 25-34
+hair: Black Hair, open
+source_note: Google
+approval: pending
+
+process:
+The reference portraits were kept for provenance and were not sent to the model.
+The model received a skin-tone swatch and a hair-color swatch, plus a written description of a new face.
+
+source_files:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_152637/sources/01_01_ayesha-omer1.jpg
+   sha256: 3095bcd3c18d2da1ef89432ae201b6a9fdc5ad69016ebf9ef101baf25ac746dd
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_152637/sources/02_02_ayesha-omer2.jpeg
+   sha256: 2b1f6da63e0342f82854802deffd71a91b3bc4ab8418194f859f3f9c705b0484
+3. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_152637/sources/03_03_ayesha-omer3.jpg
+   sha256: 349e47efa243c1e1f2966944c42396b00624982db475910814a5f8a5c91a988f
+
+files_sent_to_model:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_152637/swatches/skin_swatch.png
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_152637/swatches/hair_swatch.png
+
+prompt:
+Create one studio photograph of a newly synthesized adult woman for a commercial fashion model library. Exactly one person, in one frame. Not a grid, collage, or set of alternate looks.
+
+No photograph of a person is attached. The small images are flat color swatches: the first is skin tone, the second is hair color. They contain no face. Do not reconstruct anyone from them, and do not draw a real public figure. Build only the new face described below.
+
+Her new face is: a heart-shaped face with a smaller chin, almond eyes set wider apart, a broader nose with a soft tip, a wider mouth, and a narrow chin. These features replace the face in the photos. Keep her an original adult, apparent age 25-34, with South Asian features suitable for Pakistani and Indian fashion photography.
+
+Photograph her as a fashion model on a gallery card, in a 5:4 frame. She faces the camera directly, centered, framed from the mid-chest up, with a little plain background on both sides. Her posture is a model's: shoulders relaxed and slightly back, chin gently lifted, head level, not stiff and not slouched.
+
+Her expression is a slight smile only. The corners of the mouth lift a little, the lips stay together, and no teeth show. The smile is not wide. Her eyes are bright, open, and on the lens, with a little warmth, the way a model holds a look for the camera. Not a blank face, not a dull face, not a grin, not a laugh. No frown, no sorrow, and no heavy lids.
+
+Normal adult proportions. Her head is not enlarged. Both shoulders are in frame and are wider than her head. Her neck is a natural length, not long or thin. Leave a little space around the hair. Do not crop so tightly that the face overwhelms the body.
+
+Hair: Black Hair, open. A few loose strands at the hairline. She wears a plain white tank top with visible fine-knit texture. Light makeup, still recognizably her skin: a thin even base, a soft flush on the cheeks, groomed brows, mascara, and a light nude-rose lip. Pores remain visible. No heavy contour, no dark lipstick, no false lashes, and no glassy highlight. The face is slightly asymmetrical.
+
+Light a large soft source from slightly above and in front, a little to one side, with enough fill that the face stays bright rather than flat or grey. The nose, cheekbones, and jaw have real depth, and each eye has a small catchlight. Seamless very light grey background. A studio photograph from a camera, not a flat identity photo and not a 3D render. No beauty filter, no plastic skin, no waxy highlights, no extra fingers, no distorted ears. No text, logo, watermark, or other people.

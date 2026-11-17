@@ -1,0 +1,22 @@
+{
+  "name": "Zoya",
+  "age_range": "25-40",
+  "size": "L-XL",
+  "height": "tall",
+  "shape": "athletic",
+  "skin": "light wheatish",
+  "eye_color": "brown",
+  "hair_color": "chestnut brown",
+  "hairstyle": "Blow Dryed wavy open hair properly set",
+  "vibe": "confident",
+  "face_id": "20261116_185320",
+  "approval": "pending",
+  "body_description": "fuller build: broad shoulders, a softer neck and fuller upper arms, a fuller face with soft cheeks and a softer jawline; height: tall, about 5'8\" or taller; an athletic silhouette: defined shoulders, a lean waist, toned arms",
+  "updated_at": "2026-11-16T22:07:56Z",
+  "face_edits": [
+    {
+      "at": "2026-11-16T22:07:36Z",
+      "prompt": "She should not have the oh so perfect features but still be looking like a professional competitive model. The skin should feel real the eye colour and expression should be lively and her skin tone should be fair/light whitish. use the reference images to buy a blend of features"
+    }
+  ]
+}

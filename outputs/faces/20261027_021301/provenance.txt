@@ -1,0 +1,52 @@
+face_id: 20261027_021301
+created_at: 2026-10-26T21:13:28Z
+model: google/gemini-3.1-flash-image-preview
+aspect_ratio: 3:4
+image_size: 2K
+age_range: 18-24
+hair: black hair, length till waist, create 2 looks, 1 with moors, 1 open hair centre part
+source_note: Google images, pinterest, clothing-brands, blogs, etc.
+approval: pending
+
+process:
+Reference photos were sent only as realism and appearance context.
+The prompt requires a new adult identity and forbids a recognizable copy of the reference person.
+
+source_files:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_021301/sources/01_01_sajal-aly9.jpg
+   sha256: cf28ef8558fbbefecddd37d8af8f33ef4d17895d04bf0b021d4c971d46169c1e
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_021301/sources/02_02_sajal-aly10.jpg
+   sha256: 78a0dcddc7b820c1024b55fa20bad5fcb87156e334e932bf864fe66401ad9b2f
+3. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_021301/sources/03_03_sajal-aly11.jpg
+   sha256: 6e3b558adb2bcbb78a36688967ccec9ddac6380754a8457a76d4f60aa6f40d4b
+
+files_sent_to_model:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_021301/references/01_01_01_sajal-aly9.jpg
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_021301/references/02_02_02_sajal-aly10.jpg
+3. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261027_021301/references/03_03_03_sajal-aly11.jpg
+
+prompt:
+Create one photograph of a new adult woman for a commercial fashion model library. Exactly one person, in one frame. Not a grid, collage, or set of alternate looks.
+
+The attached photos are reference material only. They show a real person. Do not depict that person. Do not make a lookalike, a relative, an aged or younger version, or a face that someone who knows her would recognize. Change the face shape, the distance between the eyes, the nose, the lips, the jaw, the chin, the brow, and the ears so the result is a different individual. Do not copy her moles, marks, or distinctive features.
+
+She should look like a working fashion model during a catalog shoot, not a person sitting for a passport or identity photo. Turn her body slightly, with one shoulder closer to the camera, and let her head sit at a small natural angle. Her eyes meet the lens and are alive: a little warmth in them, as if she has just been spoken to. A small real smile, the kind that changes the eyes, not a blank closed mouth and not a wide grin. No sorrow, no heavy lids, no vacant stare, and no frown.
+
+She is an original adult, apparent age 18-24, with South Asian features suitable for Pakistani and Indian fashion photography. Hair: black hair, length till waist, create 2 looks, 1 with moors, 1 open hair centre part. Use that description for this one portrait only. A few loose strands and flyaways, not a solid sheet of hair. She wears a simple black fine-knit top with a real neckline, seams, and fabric texture. Shoulders are covered. Light daytime makeup only: groomed brows, a thin coat of mascara, a soft muted lip color, and skin that still shows pores, faint color variation, and fine facial hair underneath. No glam, no contour stripes, no glassy highlight. Eyes have depth, a moist surface, and uneven lashes. The face is slightly asymmetrical, the way a real face is. Light comes from one side, so the cheek and neck have a gentle shadow. Plain light-grey studio background. This must look like a photograph from a camera, not a rendered or retouched face. No beauty filter, no plastic skin, no waxy highlights, no extra fingers, no distorted ears. No text, logo, watermark, or other people.
+
+edit_log:
+- 2026-11-17T14:08:04Z: details updated: name: (empty) -> Suhaye; age_range: (empty) -> 18-24; size: (empty) -> S-M; height: (empty) -> average; shape: (empty) -> hourglass; skin: (empty) -> fair; eye_color: (empty) -> hazel; hair_color: (empty) -> dark brown; hairstyle: (empty) -> Curly open hair, lengthy till waist; vibe: (empty) -> fresh
+- 2026-11-17T14:12:32Z: face edit candidate 20261117_191041_she-should-not-have-the-oh-so-perfect-fe.png made with 3 reference photos kept in face_edit_refs/20261117_191041/ (01_01_Screenshot_2026-11-17_at_7_09_41_PM.png sha256 fccbaad67b65a442ba0b1f94a9950bdcfb869fbe1913601146cbca3ae6af4bae; 02_02_durefishan-saleem2.jpeg sha256 d8767ed3d405e62e8aeea7680bd1095587195ba2eb00698d33f9f736fb976a8b; 03_03_ayesha-omer1.jpg sha256 3095bcd3c18d2da1ef89432ae201b6a9fdc5ad69016ebf9ef101baf25ac746dd). Only written feature notes went to the image model. Prompt: She should not have the oh so perfect features but still be looking like a professional model. The skin should feel real the eye colour and expression should be lively and her skin tone should be fair/light whitish. use the reference images to buy a blend of features and also use the details from metadata
+- 2026-11-17T14:13:07Z: face replaced by an AI edit (previous face kept in face_history/). Edit prompt: She should not have the oh so perfect features but still be looking like a professional model. The skin should feel real the eye colour and expression should be lively and her skin tone should be fair/light whitish. use the reference images to buy a blend of features and also use the details from metadata. Approval reset to pending.
+- 2026-11-17T14:16:15Z: face edit candidate 20261117_191531_she-should-not-have-the-oh-so-perfect-fe.png made with 3 reference photos kept in face_edit_refs/20261117_191531/ (01_01_Dananeer-mobeen2.jpg sha256 bf819fabe0678d42d84ba56327a3960a574ad3797c41b8a3ebd65c6ece40e54f; 02_02_durefishan-saleem3.webp sha256 ca71427b672f3e8415f1bb61b558a478b559665069523e39534a2a54a8c41c0b; 03_03_hania-amir4.webp sha256 e0a50d71e5ad107083a938ddf0fbbdf6b081e54bf87f7ecdc2a63bed19bc05a7). Only written feature notes went to the image model. Prompt: She should not have the oh so perfect features but still be looking like a professional model. The skin should feel real the eye colour and expression should be lively and her skin tone should be fair/light whitish. use the reference images to buy a blend of features and also use the details from metadata 
+
+Use the eyes features of reference image 1, nose features from reference image 2, and lips features from reference image 3.
+- 2026-11-17T14:16:40Z: face replaced by an AI edit (previous face kept in face_history/). Edit prompt: She should not have the oh so perfect features but still be looking like a professional model. The skin should feel real the eye colour and expression should be lively and her skin tone should be fair/light whitish. use the reference images to buy a blend of features and also use the details from metadata 
+
+Use the eyes features of reference image 1, nose features from reference image 2, and lips features from reference image 3.. Approval reset to pending.
+- 2026-11-17T14:34:45Z: face edit candidate 20261117_192024_use-the-eyes-features-of-reference1-nose.png made with 3 reference photos kept in face_edit_refs/20261117_192024/ (01_01_hania-amir4.webp sha256 e0a50d71e5ad107083a938ddf0fbbdf6b081e54bf87f7ecdc2a63bed19bc05a7; 02_02_durefishan-saleem3.webp sha256 ca71427b672f3e8415f1bb61b558a478b559665069523e39534a2a54a8c41c0b; 03_03_Dananeer-mobeen2.jpg sha256 bf819fabe0678d42d84ba56327a3960a574ad3797c41b8a3ebd65c6ece40e54f). Only written feature notes went to the image model. Prompt: Use the eyes features of reference1, nose features from reference2, and lips features from reference3.
+- 2026-11-17T15:12:10Z: face replaced by an AI edit (previous face kept in face_history/). Edit prompt: Use the eyes features of reference1, nose features from reference2, and lips features from reference3.. Approval reset to pending.
+- 2026-11-17T16:19:49Z: face edit candidate 20261117_211915_she-should-not-have-the-oh-so-perfect-fe.png made in rebuild mode with 3 reference photos kept in face_edit_refs/20261117_211915/ (01_01_Dananeer-mobeen2.jpg sha256 bf819fabe0678d42d84ba56327a3960a574ad3797c41b8a3ebd65c6ece40e54f; 02_02_durefishan-saleem3.webp sha256 ca71427b672f3e8415f1bb61b558a478b559665069523e39534a2a54a8c41c0b; 03_03_hania-amir4.webp sha256 e0a50d71e5ad107083a938ddf0fbbdf6b081e54bf87f7ecdc2a63bed19bc05a7). Only written feature notes went to the image model. Feature assignments: eyes: large, almond shape, slightly upturned (from reference 1); nose: medium length, narrow bridge (from reference 2); lips: full, well-defined cupid's bow (from reference 3). Prompt: She should not have the oh so perfect features but still be looking like a professional model. The skin should feel real the eye colour and expression should be lively and her skin tone should be fair/light whitish. use the reference images to buy a blend of features and also use the details from metadata 
+Use the eyes features of reference1, nose features from reference2, and lips features from reference3.
+- 2026-11-17T16:19:59Z: face replaced by an AI edit (previous face kept in face_history/). Edit prompt: She should not have the oh so perfect features but still be looking like a professional model. The skin should feel real the eye colour and expression should be lively and her skin tone should be fair/light whitish. use the reference images to buy a blend of features and also use the details from metadata 
+Use the eyes features of reference1, nose features from reference2, and lips features from reference3.. Approval reset to pending.

@@ -1,0 +1,47 @@
+face_id: 20261116_185320
+created_at: 2026-11-16T13:53:50Z
+model: google/gemini-3.1-flash-image-preview
+aspect_ratio: 5:4
+image_size: 4K
+age_range: 25-34
+hair: Black Hair, open
+source_note: google
+approval: pending
+
+process:
+The reference portraits were kept for provenance and were not sent to the model.
+The model received a skin-tone swatch and a hair-color swatch, plus a written description of a new face.
+
+source_files:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_185320/sources/01_01_mahnoor-baloch.jpeg
+   sha256: 2671df0f0ebdb84c5a2eabcae7b90cc3a2b2d390d70000a1c8c2554851954a52
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_185320/sources/02_02_mahnoor-baloch2.jpg
+   sha256: b86b89cf45acdbe00bc9bfe604b71a3e68674fcdbe2b29cc5b51297ece145400
+3. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_185320/sources/03_03_mahnoor-baloch3.jpeg
+   sha256: 1866fedafd07bdd2228b8e544a3363e9f3dac0d225a6136d9f9284af5a95c4e3
+
+files_sent_to_model:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_185320/swatches/skin_swatch.png
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261116_185320/swatches/hair_swatch.png
+
+prompt:
+Create one professional model-casting portrait of a newly synthesized adult woman, in the style of a high-end fashion agency or e-commerce model gallery card. Exactly one person, one frame. Not a grid, collage, or set of alternate looks.
+
+No photograph of a person is attached. The small images are flat color swatches: the first is skin tone, the second is hair color. They contain no face. Do not reconstruct anyone from them, and do not draw a real public figure. Build only the new face described below.
+
+Her new face: a sculpted oval face with high, defined cheekbones, large almond eyes with a slight upward tilt and a defined crease, a straight nose with a subtly high bridge, medium-full lips with a gentle natural curve, and a clean oval jawline. She is an original adult, apparent age 25-34, with refined South Asian features suited to Pakistani and Indian fashion campaigns. She has the striking but natural look of a working runway and editorial model: strong bone structure, harmonious proportions, clear well-groomed brows, and a polished, high-end presence.
+
+Framing: portrait-style casting headshot, head and shoulders, in a 5:4 frame. Her face is the clear subject and fills roughly 55 to 60 percent of the frame height; both shoulders and the top of the white tank are visible, and there is soft grey space on both sides. Camera at eye level, 85mm portrait lens, shallow depth, tack-sharp eyes. Her body is turned very slightly (about 10 to 15 degrees) while her head faces the camera, chin level to slightly lowered, shoulders relaxed and down. Not a frontal passport pose.
+
+Expression: calm, composed, confident. Lips relaxed and closed, at most the faintest softness at the corners of the mouth. Direct, steady, intelligent gaze into the lens. No broad smile, no teeth, no laugh, no frown, no sadness, no heavy lids. The face is neither blank nor cheerful: the neutral, assured look of a model on a casting card.
+
+Hair: Black Hair, open. Professionally styled, healthy and glossy, with natural movement and a few fine flyaways at the hairline. She wears a plain, fitted white ribbed tank top with a clean neckline, and nothing else: no jewellery, no earrings in frame, no text.
+
+Skin and makeup: polished editorial retouching that keeps real skin texture, with fine pores and natural variation visible. Even, luminous base, subtle contour that defines the cheekbones, soft natural flush, neat brows, defined lashes, soft nude-rose lip. Clean and camera-ready, never heavy, never plastic.
+
+Light: a large soft beauty-dish source slightly above and in front, with gentle fill and a soft kicker from one side so the cheekbones, nose, and jaw show real sculpting depth. Bright, clean skin with a soft highlight, and a catchlight in each eye. Seamless light-grey studio backdrop with a very subtle gradient. A real studio photograph, not a 3D render, not a flat identity or visa photo, no beauty filter, no waxy highlights, no distorted ears or hands. No text, logo, watermark, or other people.
+
+edit_log:
+- 2026-11-16T21:59:08Z: details updated: name: (empty) -> Zoya; age_range: (empty) -> 25-40; size: (empty) -> L-XL; height: (empty) -> tall; shape: (empty) -> athletic; skin: (empty) -> light wheatish; eye_color: (empty) -> brown; hair_color: (empty) -> chestnut brown; hairstyle: (empty) -> Blow Dryed wavy open hair properly set; vibe: (empty) -> confident
+- 2026-11-16T22:07:06Z: face edit candidate 20261117_030632_she-should-not-have-the-oh-so-perfect-fe.png made with 3 reference photos kept in face_edit_refs/20261117_030632/ (01_01_mawra-hocane3.webp sha256 d6cf070b7378c328424c46f2ec1a4585803dfabe9e3b888e1a04fb83f72012a2; 02_02_mehwish-hayat2.jpg sha256 a572f98e74958c8c111b3cb22abf55e3cefaf9ad225a015ad92610ec3d40b3cb; 03_03_ayza-khan7.jpg sha256 685a61db381a0e8a80ecd81da37047964454b9e647842ea7f8cb8226f85010dc). Only written feature notes went to the image model. Prompt: She should not have the oh so perfect features but still be looking like a professional competitive model. The skin should feel real the eye colour and expression should be lively and her skin tone should be fair/light whitish. use the reference images to buy a blend of features
+- 2026-11-16T22:07:36Z: face replaced by an AI edit (previous face kept in face_history/). Edit prompt: She should not have the oh so perfect features but still be looking like a professional competitive model. The skin should feel real the eye colour and expression should be lively and her skin tone should be fair/light whitish. use the reference images to buy a blend of features. Approval reset to pending.

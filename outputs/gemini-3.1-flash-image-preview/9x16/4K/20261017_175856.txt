@@ -1,0 +1,105 @@
+model: google/gemini-3.1-flash-image-preview
+aspect_ratio: 9:16
+image_size: 4K
+
+references:
+1. Shirt/top front
+   original: /Users/macbookpro/Documents/GitHub/SilkStudio/uploads/7919fd7c-ce80-4321-9bd3-54cb6bb153ae/shirt_front/01_IMG_20260828_185544.jpg
+   sent: uploads/20261017_175856/01_01_IMG_20260828_185544.jpg
+2. Shirt/top back
+   original: /Users/macbookpro/Documents/GitHub/SilkStudio/uploads/7919fd7c-ce80-4321-9bd3-54cb6bb153ae/shirt_back/02_IMG_20260828_185711.jpg
+   sent: uploads/20261017_175856/02_02_IMG_20260828_185711.jpg
+3. Shirt/top neck
+   original: /Users/macbookpro/Documents/GitHub/SilkStudio/uploads/7919fd7c-ce80-4321-9bd3-54cb6bb153ae/shirt_neck/03_IMG_20260828_185838.jpg
+   sent: uploads/20261017_175856/03_03_IMG_20260828_185838.jpg
+4. Shirt/top neck detailing
+   original: /Users/macbookpro/Documents/GitHub/SilkStudio/uploads/7919fd7c-ce80-4321-9bd3-54cb6bb153ae/shirt_neck_detail/04_IMG_20260828_185849.jpg
+   sent: uploads/20261017_175856/04_04_IMG_20260828_185849.jpg
+5. Shirt/top neck detailing
+   original: /Users/macbookpro/Documents/GitHub/SilkStudio/uploads/7919fd7c-ce80-4321-9bd3-54cb6bb153ae/shirt_neck_detail/05_IMG_20260828_185845.jpg
+   sent: uploads/20261017_175856/05_05_IMG_20260828_185845.jpg
+6. Right sleeve
+   original: /Users/macbookpro/Documents/GitHub/SilkStudio/uploads/7919fd7c-ce80-4321-9bd3-54cb6bb153ae/sleeve_right/06_IMG_20260828_185905.jpg
+   sent: uploads/20261017_175856/06_06_IMG_20260828_185905.jpg
+7. Left sleeve
+   original: /Users/macbookpro/Documents/GitHub/SilkStudio/uploads/7919fd7c-ce80-4321-9bd3-54cb6bb153ae/sleeve_left/07_IMG_20260828_185809.jpg
+   sent: uploads/20261017_175856/07_07_IMG_20260828_185809.jpg
+8. Shirt detailing patch
+   original: /Users/macbookpro/Documents/GitHub/SilkStudio/uploads/7919fd7c-ce80-4321-9bd3-54cb6bb153ae/shirt_patch/08_IMG_20260828_185918.jpg
+   sent: uploads/20261017_175856/08_08_IMG_20260828_185918.jpg
+9. Trouser/bottom
+   original: /Users/macbookpro/Documents/GitHub/SilkStudio/uploads/7919fd7c-ce80-4321-9bd3-54cb6bb153ae/trouser/09_IMG_20260906_162416.jpg
+   sent: uploads/20261017_175856/09_09_IMG_20260906_162416.jpg
+10. Dupatta
+   original: /Users/macbookpro/Documents/GitHub/SilkStudio/uploads/7919fd7c-ce80-4321-9bd3-54cb6bb153ae/dupatta/10_IMG_20260906_162510.jpg
+   sent: uploads/20261017_175856/10_10_IMG_20260906_162510.jpg
+11. Dupatta detailing
+   original: /Users/macbookpro/Documents/GitHub/SilkStudio/uploads/7919fd7c-ce80-4321-9bd3-54cb6bb153ae/dupatta_detail/11_IMG_20260906_162522.jpg
+   sent: uploads/20261017_175856/11_11_IMG_20260906_162522.jpg
+
+TASK
+Assemble one real outfit from the labeled reference photos, then photograph an adult Pakistani woman wearing that exact outfit. The garment in the final picture must be the same garment as the references: the same cut and the same surface detail. Study every reference before composing the picture.
+
+REFERENCE CATALOG
+
+Image 1 — Shirt/top front (file: 01_IMG_20260828_185544.jpg)
+This is the master front of the shirt/kameez. Match its length, width, neckline, front opening, panel seams, base fabric color, print, and every motif exactly. Do not redesign the front.
+
+Image 2 — Shirt/top back (file: 02_IMG_20260828_185711.jpg)
+This is the master back. Match the back neck, yoke, motifs, fabric, and length. Do not copy the front design onto the back unless this photo shows the same design.
+
+Image 3 — Shirt/top neck (file: 03_IMG_20260828_185838.jpg)
+This fixes the neckline shape and the neck embroidery. Keep the depth, width, and finish of the neck exactly as photographed.
+
+Image 4 — Shirt/top neck detailing (file: 04_IMG_20260828_185849.jpg)
+Close-up of neck handwork only. Treat it as a magnification of the neck photo: same stitches, beads, stones, and spacing. Do not add motifs that appear only because the crop is tight, and do not spread this work past the area shown in the full neck photo.
+
+Image 5 — Shirt/top neck detailing (file: 05_IMG_20260828_185845.jpg)
+Close-up of neck handwork only. Treat it as a magnification of the neck photo: same stitches, beads, stones, and spacing. Do not add motifs that appear only because the crop is tight, and do not spread this work past the area shown in the full neck photo.
+
+Image 6 — Right sleeve (file: 06_IMG_20260828_185905.jpg)
+Full right sleeve, including the cuff if it is in frame. This sleeve stays on the woman's right arm. Do not mirror it onto the left arm unless the left-sleeve photo is identical.
+
+Image 7 — Left sleeve (file: 07_IMG_20260828_185809.jpg)
+Full left sleeve, including the cuff if it is in frame. This sleeve stays on the woman's left arm.
+
+Image 8 — Shirt detailing patch (file: 08_IMG_20260828_185918.jpg)
+A local patch of shirt handwork. Reproduce this patch only where the photos show it. Do not tile it across empty fabric.
+
+Image 9 — Trouser/bottom (file: 09_IMG_20260906_162416.jpg)
+Full trouser or bottom. Match the cut, rise, width, length, fabric, color, and any embroidery at the hem or ankle. Do not change it into a different style of pant, lehenga, or skirt.
+
+Image 10 — Dupatta (file: 10_IMG_20260906_162510.jpg)
+Full dupatta, including both borders and the pallu if visible. Match the fabric, print, border width, and end design. Drape this same dupatta; do not substitute a different scarf.
+
+Image 11 — Dupatta detailing (file: 11_IMG_20260906_162522.jpg)
+Close-up of dupatta embroidery, border, tassels, or pallu work. Use it to sharpen the dupatta already shown, not to design a new one.
+
+PIECES WITH NO PHOTO
+- Border
+- Border detailing
+- Trouser/bottom detailing
+No photograph was uploaded for these pieces. Do not design a replacement. If that piece is already visible inside another uploaded photo, use only what that photo shows. If it is not visible anywhere, omit it.
+
+HOW TO READ THE PHOTOS
+Use each full-piece photo as the map of shape, placement, and color. Use each close-up only as a magnification of work that already exists on that piece. A tight crop does not mean the motif repeats everywhere. Where two photos of the same piece overlap, they must agree; do not average them into a new design. Keep the right sleeve on the right arm and the left sleeve on the left arm. Keep the front, back, neck, border, trouser, and dupatta as separate pieces of one outfit.
+
+GARMENT FIDELITY
+Do not add anything to the dress, and do not remove anything from it.
+Preserve, at the same place and the same scale: base fabric color and weave; printed or woven motifs; embroidery thread colors and stitch direction; gota, lace, and piping; glasswork, stones, crystals, and beads; crystal hangings; tassels; neckline shape; cuff shape; border width and repeat; patch placement; shirt length and hem; trouser cut and length; dupatta size, border, and pallu.
+Do not invent extra flowers, vines, borders, buttons, belts, jackets, underskirts, or a second dupatta. Do not change a plain area into embroidery. Do not drop small hangings because they are thin. Do not recolor the fabric to flatter the background. Do not simplify dense handwork into a smooth print. Do not mirror an asymmetric pattern. Gold, silver, and beadwork must sit on the cloth the way the photos show, not melt into the print.
+
+THE WOMAN
+Photograph one adult Pakistani woman. She is an original person, not a copy or lookalike of any real influencer, actress, model, or public figure.
+She must look photographed, not illustrated: South Asian features, a natural Pakistani skin tone with pores, fine facial hair, and slight unevenness, a realistic brown iris, distinct eyelashes, natural lips, and no plastic smoothing. Hands show five separate fingers with knuckles and nails. Feet and ankles are complete and match the body. Her expression is calm and natural. Hair is styled for Pakistani formal wear and does not cover the neckline, cuffs, or dupatta border.
+Jewellery and footwear are not part of the garment photos. Add only what a Pakistani woman would wear with this outfit: earrings, a light necklace, and bangles or rings that leave the embroidery visible, plus footwear that suits the dress (formal sandals, heels, or khussa). Jewellery and shoes must not cover neck work, cuff work, or the trouser hem.
+
+POSE, LIGHT, AND BACKGROUND
+Full-length portrait, head to toe, with a small margin above the head and below the feet. The body is in a relaxed standing pose, weight on one leg, so the shirt, both sleeves, trouser, and dupatta read clearly. Use a slight three-quarter turn only if the front embroidery stays fully visible. Arms are away from the body enough to show the sleeves and cuffs. Drape the supplied dupatta in a customary Pakistani way, with the pallu visible, without hiding the front panel.
+Background is minimal and uncluttered: a plain studio wall or a quiet interior surface. Choose a neutral color that suits the dress and does not shift the fabric color. Lighting is soft and even, with gentle shadows that show embroidery relief, bead sparkle, and lace edges. No harsh color gel, no sunset wash, no smoke, no furniture, no other people, no text, no logo, no watermark, no collage, and no frame.
+
+SHARPNESS
+This picture is a 4K fashion photograph. When it is zoomed, the neck work, border, patches, sleeve cuffs, trouser hem, and dupatta edge must still show individual stitches, stones, crystals, glass pieces, tassels, and lace holes. Detail comes from the reference photos, not from painted-looking texture. Do not blur the garment to make the face softer, and do not crop off the hem, cuffs, or feet.
+
+OUTPUT
+One single photograph. The dress is the outfit defined by the reference catalog and by no other source. The woman, pose, jewellery, footwear, background, and light follow the sections above.

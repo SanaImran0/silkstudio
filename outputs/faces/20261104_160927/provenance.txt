@@ -1,0 +1,41 @@
+face_id: 20261104_160927
+created_at: 2026-11-04T11:11:21Z
+model: google/gemini-3.1-flash-image-preview
+aspect_ratio: 3:4
+image_size: 2K
+age_range: 18-24
+hair: Open hair styled properly (giving a neat look)
+source_note: Ayeza Khan's catalogue from downloaded images from google
+approval: pending
+
+process:
+Reference photos were sent only as realism and appearance context.
+The prompt requires a new adult identity and forbids a recognizable copy of the reference person.
+
+source_files:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_160927/sources/01_01_ayza-khan1.webp
+   sha256: d43fe4b32cb7b6038683d1f6f98c9b2c818ad31d83cf9e44beda9395c761e9c1
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_160927/sources/02_02_ayza-khan2.jpeg
+   sha256: 57667c340938ec5369578885e3938fc61b9376c75c34205b56e753f8bb04394f
+3. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_160927/sources/03_03_ayza-khan3.jpg
+   sha256: c82d9ab9731564a551299d4b565dbedc7d043fc775b10492c00378c01b0ee2a0
+
+files_sent_to_model:
+1. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_160927/references/01_01_01_ayza-khan1.jpg
+2. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_160927/references/02_02_02_ayza-khan2.jpg
+3. /Users/macbookpro/Documents/GitHub/SilkStudio/outputs/faces/20261104_160927/references/03_03_03_ayza-khan3.jpg
+
+prompt:
+Create one studio photograph of a newly synthesized adult woman for a commercial fashion model library. Exactly one person, in one frame. Not a grid, collage, or set of alternate looks.
+
+The attached photos are not the woman to depict. Do not draw her, a retouched version of her, a relative, or anyone who could be recognized as her. Borrow only a general South Asian skin tone and the look of a real photograph. Discard her bone structure, eye shape, nose, mouth, jaw, brows, and marks.
+
+Her new face is: a heart-shaped face with a smaller chin, rounder eyes set closer together, a narrower nose, a fuller lower lip, and a soft jaw and a rounded chin. These features replace the face in the photos. Keep her an original adult, apparent age 18-24, with South Asian features suitable for Pakistani and Indian fashion photography.
+
+Photograph her as a model gallery card. She faces the camera directly, head level, shoulders square, centered, framed from the mid-chest up. Her expression is alive: a small closed-mouth smile that reaches her eyes, the way a model looks when she is comfortable with the photographer. Eyes bright, open, and engaged with the lens, with a little warmth at the outer corners. Not a blank face, not a dull or tired face, not a wide grin, and not a show of teeth. No frown, no sorrow, and no heavy lids.
+
+Normal adult proportions. Her head is not enlarged. Both shoulders are in frame and are wider than her head. Her neck is a natural length, not long or thin. Leave a little space around the hair. Do not crop so tightly that the face overwhelms the body.
+
+Hair: Open hair styled properly (giving a neat look). A few loose strands at the hairline. She wears a plain white tank top with visible fine-knit texture. No-makeup makeup: skin looks like her own skin, even and fresh, with a soft natural flush on the cheeks and pores still visible. Brows are brushed into shape, lashes are defined with mascara, and the lip color is close to her natural lip. No foundation mask, no contour, no dark lipstick, and no glassy highlight. The face is slightly asymmetrical.
+
+Light a large soft source from slightly above and in front, a little to one side, with enough fill that the face stays bright rather than flat or grey. The nose, cheekbones, and jaw have real depth, and each eye has a small catchlight. Seamless very light grey background. A studio photograph from a camera, not a flat identity photo and not a 3D render. No beauty filter, no plastic skin, no waxy highlights, no extra fingers, no distorted ears. No text, logo, watermark, or other people.
