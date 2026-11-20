@@ -1,0 +1,15 @@
+{
+  "face_id": "20261104_150605",
+  "approval": "pending",
+  "face_edits": [
+    {
+      "at": "2026-11-17T20:03:18Z",
+      "prompt": "use a blend of face features from the reference images"
+    },
+    {
+      "at": "2026-11-17T20:05:12Z",
+      "prompt": "Waist-length hair styled in an elegant half-up, half-down look; the top section is parted neatly into two symmetrical braids woven back from the crown, flowing into soft, relaxed flat-iron waves. High-shine, professional salon blowout texture with clean, frizz-free definition"
+    }
+  ],
+  "updated_at": "2026-11-17T20:05:12Z"
+}

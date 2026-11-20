@@ -62,3 +62,6 @@ Framing: head and shoulders in a 5:4 frame. Her face fills about half of the fra
 Expression: relaxed and natural, as if caught a moment before a smile. Lips soft and closed, the corners neutral to very slightly lifted, with a little life in the eyes and a steady gaze toward the lens. No posed smile, no teeth, no frown, no blank stare.
 
 Camera and light: 85mm lens at f/2.8, ISO 200, a large softbox slightly above and to one side with gentle fill, natural light falloff, one soft catchlight per eye, sharp focus on the eyes with a gentle fall-off at the ears. Plain mid-grey seamless backdrop. Natural colour, mild photographic grain, true-to-life contrast. No watermark, no logo, no extra people, no extra fingers, no distorted ears.
+
+edit_log:
+- 2026-11-20T19:26:24Z: details updated: name: (empty) -> Biya; height: (empty) -> average; shape: (empty) -> straight; eye_color: (empty) -> dark brown; vibe: (empty) -> confident

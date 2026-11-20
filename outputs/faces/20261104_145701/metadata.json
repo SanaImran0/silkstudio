@@ -1,0 +1,22 @@
+{
+  "name": "Alyna",
+  "age_range": "18-24",
+  "size": "S-M",
+  "height": "tall",
+  "shape": "athletic",
+  "skin": "wheatish",
+  "eye_color": "dark brown",
+  "hair_color": "black",
+  "hairstyle": "Half tied hair coming 3 inches below shoulders",
+  "vibe": "confident",
+  "face_id": "20261104_145701",
+  "approval": "pending",
+  "body_description": "average build: medium shoulder width, a natural neck, softly visible collarbones, a face of average fullness; height: tall, about 5'8\" or taller; an athletic silhouette: defined shoulders, a lean waist, toned arms",
+  "updated_at": "2026-11-17T17:52:45Z",
+  "face_edits": [
+    {
+      "at": "2026-11-17T17:52:45Z",
+      "prompt": "She should not have the oh so perfect features but still be looking like a professional competitive model. The skin should feel real the eye colour and expression should be lively and her skin tone should be normal. use the reference images to buy a blend of features and also use the details from metadata \nUse the eyes features of reference1, nose features from reference2, and lips features from reference3."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Baila",
+  "age_range": "25-40",
+  "size": "L-XL",
+  "height": "tall",
+  "shape": "hourglass",
+  "skin": "wheatish",
+  "eye_color": "dark brown",
+  "hair_color": "honey brown",
+  "hairstyle": "Wavy hair tied in ponytail",
+  "vibe": "confident",
+  "face_id": "20261116_154108",
+  "approval": "pending",
+  "body_description": "fuller build: broad shoulders, a softer neck and fuller upper arms, a fuller face with soft cheeks and a softer jawline; height: tall, about 5'8\" or taller; an hourglass silhouette: balanced shoulders and hips, a defined waist",
+  "updated_at": "2026-11-20T20:04:40Z",
+  "face_edits": [
+    {
+      "at": "2026-11-20T19:56:34Z",
+      "prompt": "Blend a new, realistic South Asian fashion model face from the three references: take the eye shape and brows from reference 1, nose and cheekbones from reference 2, and jawline, chin, and lips from reference 3. Merge their bone structure into one distinct woman in her late 20s to early 30s without copying anyone.\n\nKeep her realistically imperfect rather than AI-polished: subtle facial asymmetry, authentic wheatish skin with visible fine pores, faint under-eye creases, natural skin tone variation, and soft unretouched lips with minimal makeup. Give her lively warm hazel eyes with natural catchlights and a relaxed, warm expression. Style her auburn brown wavy hair in a neat ponytail with soft flyaways and baby hairs. Natural studio casting light, unretouched editorial photo, sharp skin detail."
+    },
+    {
+      "at": "2026-11-20T20:03:39Z",
+      "prompt": "Blend a realistic Pakistani fashion model face from the three references: eye shape and fuller natural dark brows from reference 1, nose and cheekbones from reference 2, jawline and lips from reference 3. Merge their bone structure into one distinct Pakistani woman in her late 20s to early 30s without copying anyone.\n\nMake her look authentically Pakistani and unedited: warm wheatish skin with olive undertones, matte-natural skin texture (no glossy or waxy AI shine), visible fine pores, faint under-eye creases, subtle facial asymmetry, and bare unretouched lips. Warm hazel-brown almond eyes, relaxed neutral expression looking straight at the camera\u2014no forced smile. Deep dark brown wavy hair with subtle auburn undertones in a ponytail, natural flyaways. Raw 85mm DSLR casting photo, flat natural daylight, slight film grain."
+    },
+    {
+      "at": "2026-11-20T20:04:40Z",
+      "prompt": "Blend a realistic Pakistani fashion model face from the three references: eye shape and natural dark brows from reference 1, nose and cheekbones from reference 2, jawline and lips from reference 3. Merge their bone structure into one distinct Pakistani woman in her late 20s to early 30s.\n\nFix the expression and gaze: head straight and square to the camera, completely relaxed resting mouth\u2014lips softly closed with zero smile, no smirk, and no upturned corners. Focused, alert, natural gaze directly into the lens with relaxed eyelids and realistic dark-rimmed hazel-brown eyes (not glassy or flat). Matte-natural wheatish skin with olive undertones, visible pores, subtle asymmetry, bare lips. Dark brown wavy hair in a ponytail with natural flyaways. Raw unretouched casting polaroid, flat daylight, 85mm lens."
+    }
+  ]
+}

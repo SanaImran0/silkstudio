@@ -26,5 +26,12 @@
     "cheekbones": "photo 3"
   },
   "image": "face.png",
-  "approval": "pending"
+  "approval": "pending",
+  "name": "Biya",
+  "height": "average",
+  "shape": "straight",
+  "eye_color": "dark brown",
+  "vibe": "confident",
+  "body_description": "slim build: narrow shoulders, a slim neck, visible collarbones, a slim face with light cheeks; height: average height, about 5'5\" to 5'7\"; a straight silhouette: shoulders and hips of similar width, a softly defined waist",
+  "updated_at": "2026-11-20T19:26:24Z"
 }
